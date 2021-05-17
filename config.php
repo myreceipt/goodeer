@@ -15,7 +15,7 @@ define("DB_HOST", 'localhost');
 
 /** MySQL database username */
 /** define("DB_USER", 'voucher24jam_demo'); */
-define("DB_USER", 'straight_line_movies');
+define("DB_USER", 'movie_straight_line');
 
 /** MySQL database password */
 /** define("DB_PASS", '!Q@W#E$R'); */
@@ -23,7 +23,7 @@ define("DB_PASS", '$uw@Rd!j3M8lun9');
 
 /** MySQL database name */
 /** define("DB_NAME", 'voucher24jam_demo'); */
-define("DB_NAME", 'movie_straight_line');
+define("DB_NAME", 'straight_line_movies');
 
 /** PHP Error Reporting */
 define("DEBUG", false);
