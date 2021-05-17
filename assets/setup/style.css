@@ -1,0 +1,302 @@
+/**
+ * Version: 1.0
+ * Author: JuicyCodes
+ * Website: https://juicycodes.com
+ */
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(fonts/ProximaNova-Regular.eot);
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'), url(fonts/ProximaNova-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/ProximaNova-Regular.woff2) format('woff2'), url(fonts/ProximaNova-Regular.woff) format('woff'), url(fonts/ProximaNova-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    margin: 0;
+    background-color: #F3F5F8;
+    font-family: 'Proxima Nova', "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    color: #676a6d;
+}
+
+a {
+    color: #3287B2;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #3b98c8;
+    text-decoration: none;
+}
+
+#wrapper {
+    height: 100%;
+}
+
+.vertical-align-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.vertical-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    -moz-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: #6DC9AC;
+    width: 850px;
+}
+
+.content .content-box {
+    vertical-align: middle;
+    background-color: #fff;
+    padding: 15px 20px 20px 20px;
+}
+
+.content .left {
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+
+.content .right {
+    float: right;
+    width: 600px;
+}
+
+.content .heading {
+    border-bottom: 1px solid #7cceb4;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    color: #57b396;
+}
+
+.content .left .heading {
+    color: #fff;
+    border-color: #4EA187;
+    background-color: #4EA187;
+}
+
+.content .right .heading {
+    color: #fff;
+    background: #6dc9ac;
+    border-color: #5FC4A4;
+}
+
+.steps {
+    height: 100%
+}
+
+.step {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6DC9AC;
+    border-bottom: 1px solid #8AD4BC;
+    transition: background .5s;
+}
+
+.step:hover,
+.step.active {
+    background-color: #59b598;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: #59B598;
+    color: #fff;
+    border-radius: 2px;
+    transition: all .5s;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Proxima Nova', "Source Sans Pro", sans-serif;
+    margin: 0 5px;
+}
+
+.btn.btn-sm {
+    margin-top: 7px;
+    font-weight: 500;
+    padding: 3px 6px;
+    font-size: 13px;
+}
+
+.btn.disabled {
+    pointer-events: none;
+    background: #95d8c3;
+    color: #f3f5f8;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4EA187;
+    outline: 0;
+}
+
+.input {
+    margin: 10px 0;
+}
+
+.input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 16px;
+}
+
+input {
+    font-family: 'Proxima Nova', "Source Sans Pro", sans-serif;
+    font-weight: bold;
+}
+
+.input input[type=email],
+.input input[type=password],
+.input input[type=text],
+textarea {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    background-color: #FFFFFF;
+    border: 1px solid #e5e6e7;
+    color: #555;
+    display: block;
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    width: 80%;
+    transition: all 0.15s ease-in-out 0s;
+    font-weight: 600;
+}
+
+.input input[type=text]:focus,
+.input input[type=submit]:focus,
+.input input[type=email]:focus,
+.input input[type=password]:focus {
+    outline: 0;
+    border-color: #6DC9AC !important;
+    box-shadow: none;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.check {
+    border-bottom: 1px solid #dfeee9;
+    font-weight: 600;
+    padding: 8px 0;
+    color: #444;
+    font-size: 14px;
+}
+
+.required {
+    margin-bottom: 20px;
+}
+
+.check span {
+    background: url('ok.png');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 22px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.check span.n {
+    background: url('error.png');
+    background-size: 18px;
+    background-repeat: no-repeat;
+}
+
+.content .success {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.content .error {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #ef5350;
+    font-weight: 600;
+}
+
+.content .error_msg {
+    background: #ef5350;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.content .success_head {
+    color: #41AD49;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.content .error_head {
+    color: #E44061;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.content .error ol {
+    margin: 2px 0;
+    font-size: 13px;
+    color: #e96681;
+}
+
+.juicycodes {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #9E9E9E;
+}
+
+.juicycodes a {
+    color: #03A9F4;
+}
+
+@media screen and (max-width:900px) {
+    .content {
+        width: 90%;
+    }
+}
