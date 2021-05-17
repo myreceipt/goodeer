@@ -1,0 +1,6 @@
+/**
+ * Version: 1.1.0
+ * Author: JuicyCodes
+ * Website: https://juicycodes.com
+ */
+$(document).ready(function(){$.post(ajax_url+"license_details/",function(t){"success"==t.status?($("#license_status").fadeOut(function(){$(this).text(t.info.status).addClass("text-success").fadeIn()}),$("#license_domain").fadeOut(function(){$(this).text(t.info.domain).fadeIn()}),$("#latest_version").fadeOut(function(){$(this).text(t.info.latest).fadeIn(),t.info.update&&$(this).addClass("badge-success")}),$("#update_subscription").fadeOut(function(){$(this).text(t.info.subscription).fadeIn()})):($("#license_status").fadeOut(function(){$(this).text("Invalid").attr({title:t.message}).addClass("text-danger").fadeIn().tooltip()}),$("#license_domain").parent().fadeOut(),$("#latest_version").fadeOut(function(){$(this).text("...").fadeIn()}),$("#update_subscription").fadeOut(function(){$(this).text("...").fadeIn()}))}).error(function(t){toastr.error("License Check Error: "+t.statusText),console.log(t)}),Morris.Area({element:"stats-chart",data:views_data,xkey:"date",resize:!0,ykeys:["views"],lineColors:["#26A69A"],labels:["Views"],parseTime:!1,hideHover:"auto"}),Morris.Donut({element:"cache_chart",hideHover:"auto",resize:!0,lineWidth:"5px",data:cache_data,colors:["#81C784","#e57373"]})});
